@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet" type="text/css" href="css/custom.css"></link>
+    <script src="js/jquery-2.2.2.js"></script>
+        <title>Chris Chomicki</title> 
+    </head>
+    <body>
+        <div class="background">
+        <img src="images/regularC.png" id="logo" class="hidden">   
+            </div>
+        </div>
+            <div id="designs" class="hidden">Chomicki Designs</div>
+        
+        
+        <div id="aboutMe" class="hidden">
+            
+            <h1 id="aboutTitle">About Me:</h1>
+            <div id="aboutText">Welcome all to Chris Chomicki's personal website! </div>
+            <div id="aboutText2">I am currently a sophomore at Syracuse University studying Information Managemnet & Technology with minors in Computer Science and Global Enterprise Technology. I am also on the Division 1 Cheerleading Squad at Syracuse. </div>
+            <ul id="interests">My interests include:
+                <li>Web Design</li>
+                <li>Social Media</li>
+                <li>Networking</li>
+                <li>IT</li>
+                <li>Software Development</li>
+            </ul>
+        </div>
+        <div id="news" class="hidden">
+            <h1 id="newsTitle">News:</h1>
+            <div id="newsText">I've recently just became a teaching assistant for an Intro to Web Design class in the School of Information Studies at Syracuse University.</div>
+        </div>
+        <div id="projects" class="hidden">
+            <h1 id="projectsTitle">Projects:</h1>
+            <div id="projectsText"></div>
+        </div>
+        <div id="resume" class="hidden">
+            <h1 id="resumeTitle">Resume:</h1>
+            <div id="resumeText"></div>
+        </div>
+    
+
+        <div id="navLinksContainer" class="hidden">
+                    <ul>
+                            <li id="about1">About Me</li>
+                    
+                       
+                            <li id="news1">News</li>
+                      
+                        
+                            <li id="project1">Projects</li>
+    
+    
+                            <li id="resume1">Resume</li>
+                        </a>    
+                    </ul>
+                </div>
+        
+
+        <script>
+        $(document).ready(function(){
+            
+            $(function(){
+             $("#logo, #navLinksContainer, #designs").fadeIn(3000).removeClass(".hidden");
+               
+            });
+              
+                     $("#navLinksContainer li").click(function() { 
+    $("#logo, #designs, #aboutMe, #news, #projects, #resume").fadeOut(500);
+                                    
+  });
+         $("#about1").click(function(){                  
+      $("#aboutMe").removeClass(".hidden").fadeIn(3000);              });
+        $("#news1").click(function(){                  
+      $("#news").removeClass(".hidden").fadeIn(3000);              });  
+        $("#project1").click(function(){                  
+      $("#projects").removeClass(".hidden").fadeIn(3000);              }); 
+            $("#resume1").click(function(){                  
+      $("#resume").removeClass(".hidden").fadeIn(3000);              });  
+               });
+                                 
+                                                 
+           
+            
+    
+            
+
+                   
+                       
+
+            
+        
+        
+        </script>
+                
+    </body>
+</html>
